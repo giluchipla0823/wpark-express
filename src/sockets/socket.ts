@@ -4,8 +4,8 @@ import { User } from '../classes/user';
 
 
 export const conectarCliente = (client: Socket, io: socketIO.Server) => {
-
     const user = new User(client.id);
+
     console.log('User connected', user);
 }
 
@@ -13,9 +13,5 @@ export const conectarCliente = (client: Socket, io: socketIO.Server) => {
 export const desconectar = ( cliente: Socket, io: socketIO.Server ) => {
     cliente.on('disconnect', () => {
         console.log('User disconnected');
-
-        // usuariosConectados.borrarUsuario( cliente.id );
-
-        // io.emit('usuarios-activos', usuariosConectados.getLista()  );
     });
 }
