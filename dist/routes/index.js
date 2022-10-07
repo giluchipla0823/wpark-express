@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
 const server_1 = __importDefault(require("../classes/server"));
-const router = express_1.Router();
+const router = (0, express_1.Router)();
 // welcome to api
 router.get('/api/welcome', (req, res) => {
     res.json({
