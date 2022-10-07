@@ -38,7 +38,10 @@ class AppServer {
         this.httpServer = http_1.default.createServer(this.app);
         this.io = new socket_io_1.default.Server(this.httpServer, {
             cors: {
-                origin: ['http://localhost:4200'],
+                origin: [
+                    'http://localhost:4200',
+                    'https://wepark.pro'
+                ],
                 methods: ["GET", "POST"],
                 credentials: true
             },
