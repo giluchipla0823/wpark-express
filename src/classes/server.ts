@@ -23,7 +23,8 @@ export default class AppServer {
             cors: {
                 origin: [
                     'http://localhost:4200',
-                    'https://wepark.pro'
+                    'https://wepark.pro',
+                    'https://wpark.pro',
                 ],
                 methods: ["GET", "POST"],
                 credentials: true
